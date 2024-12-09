@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #007BFF;
+}
+
+/* inicio */
+#inicio {
+    background: url('../imagenes/banner.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+
+/* productos */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: white;
+}
