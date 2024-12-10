@@ -1,15 +1,80 @@
+:root {
+    --color-fondo-oscuro: #212529;
+    --color-fondo-claro: #1d2024;
+    --color-fondo-generico: #000000fa;
+    --color-texto-principal-claro: #9b9b9b; 
+    --color-texto-secundario-claro: #666666;
+    --color-texto-principal-oscuro: #F0F0F0;
+    --color-texto-secundario-oscuro: #B0B0B0;
+}
+
+body {
+    background-color: var(--color-fondo-oscuro);
+}
+
+/* navbar */
 .navbar {
-    background-color: #007BFF;
+    background-color: var(--color-fondo-generico);
+    border-radius: 10px;
+}
+
+nav .nav-link{
+    color: white;
+}
+
+nav .navbarMarca {
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding-right: 63%;
 }
 
 /* inicio */
 #inicio {
-    background: url('../imagenes/banner.jpg') no-repeat center center/cover;
     height: 100vh;
-    color: white;
+    color: var(--color-texto-principal-claro);
+    background-color: var(--color-fondo-oscuro);
 }
 
+#inicio .textoSecundario {
+    
+}
+
+/* sobre */
+#sobre {
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-texto-principal-claro);
+}
+
+
 /* productos */
+#productos {
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-texto-principal-claro);
+}
+
+/* proceso */
+#proceso {
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-texto-principal-claro);
+}
+
+/* contacto */
+#contacto {
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-texto-principal-claro);
+}
+
+/* separador */
+.separador {
+    height: 40px;
+    background-color: var(--color-fondo-claro); 
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
 .carousel-item img {
     height: 400px;
     object-fit: cover;
