@@ -1,12 +1,13 @@
 :root {
-    --color-fondo-oscuro: #212529;
-    --color-fondo-claro: #1d2024;
-    --color-fondo-generico: #000000fa;
-    --color-texto-principal-claro: #9b9b9b; 
-    --color-texto-secundario-claro: #666666;
-    --color-texto-principal-oscuro: #F0F0F0;
-    --color-texto-secundario-oscuro: #B0B0B0;
+    --color-fondo-oscuro: #4A2C2A;
+    --color-fondo-claro: #E8D9C6; 
+    --color-fondo-generico: #3E3532;
+    --color-texto-principal-claro: #ffffff;
+    --color-texto-secundario-claro: #a19797; 
+    --color-texto-alternativo: #d73365;
+    --color-borde: #abe5d9;
 }
+
 
 body {
     background-color: var(--color-fondo-oscuro);
@@ -23,22 +24,34 @@ nav .nav-link{
 }
 
 nav .navbarMarca {
-    font-size: 40px;
+    padding-right: 65%;
+}
+
+nav .nav-link {
+    font-size: 18px;
     text-decoration: none;
-    font-weight: bold;
+    margin-right: 15px;
     color: white;
-    padding-right: 63%;
+}
+
+nav .nav-link:hover {
+    color: var(--color-texto-alternativo);
+}
+
+nav .navbarMarca img {
+    height: 60px;
+    width: 60px;
 }
 
 /* inicio */
 #inicio {
-    height: 100vh;
+    height: 10%;
     color: var(--color-texto-principal-claro);
     background-color: var(--color-fondo-oscuro);
 }
 
 #inicio .textoSecundario {
-    
+    color: var(--color-texto-secundario-claro);
 }
 
 /* sobre */
@@ -54,6 +67,16 @@ nav .navbarMarca {
     color: var(--color-texto-principal-claro);
 }
 
+.img-circular {
+    width: 400px;         
+    height: 150px;
+    border-radius: 600px; 
+    object-fit: cover; 
+    border: 3px solid var(--color-borde);
+    margin: 10px;
+}
+
+
 /* proceso */
 #proceso {
     background-color: var(--color-fondo-oscuro);
@@ -68,7 +91,7 @@ nav .navbarMarca {
 
 /* separador */
 .separador {
-    height: 40px;
+    height: 20px;
     background-color: var(--color-fondo-claro); 
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
