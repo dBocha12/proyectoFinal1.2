@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="imagenes/logoAYR.png">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -40,9 +42,17 @@
 
     <!-- sobre -->
     <section id="sobre" class="p-5">
-        <h2 class="text-center">Sobre Nosotros</h2>
-        <p>Explicación de la startup en español.</p>
-        <p>Explanation about the startup in English.</p>
+        <h2 class="text-center mb-4">Sobre Nosotros</h2>
+        <div class="row">
+            <div class="text-center">
+                <p>En Azúcar y Ron, nos especializamos en la pastelería artesanal, creando productos frescos y deliciosos para endulzar tus momentos. Cada queque, torta y postre que elaboramos está hecho con mucho amor y los mejores ingredientes, lo que nos permite ofrecerte un sabor único en cada bocado.</p>
+                <p>Sabemos que cada momento merece ser especial, por eso nos enfocamos en crear experiencias inolvidables con nuestras exquisiteces. Desde una tarde en casa hasta la celebración de un cumpleaños, nuestros productos son la opción perfecta para acompañar cualquier ocasión.</p>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <p>Con nuestras delicias artesanales, estamos seguros de que cada bocado te hará sonreír. ¡Gracias por elegirnos!</p>
+            <p><strong>Andrea</strong> - Fundadora</p>
+        </div>
     </section>
 
     <!-- separador -->
@@ -56,27 +66,27 @@
                 <div class="carousel-item active">
                     <div class="d-flex justify-content-around">
                         <div class="text-center">
-                            <img src="imagenes/pan.jpg" class="img-circular" alt="Producto 1">
-                            <p>Producto 1</p>  
+                            <img src="imagenes/productos/gatos.png" class="img-circular" alt="Gatos">
+                            <p>Gatos</p>  
                         </div>
                         <div class="text-center">
-                            <img src="imagenes/pan.jpg" class="img-circular" alt="Producto 2">
-                            <p>Producto 2</p>  
+                            <img src="imagenes/productos/quequeCustom.png" class="img-circular" alt="Tortas Modeladas">
+                            <p>Tortas Modeladas</p>  
                         </div>
                         <div class="text-center">
-                            <img src="imagenes/pan.jpg" class="img-circular" alt="Producto 3">
-                            <p>Producto 3</p>  
+                            <img src="imagenes/productos/tortaFria.png" class="img-circular" alt="Torta Fria">
+                            <p>Torta Fria</p>  
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex justify-content-around">
                         <div class="text-center">
-                            <img src="imagenes/pan.jpg" class="img-circular" alt="Producto 4">
+                            <img src="imagenes/productos/crocante.png" class="img-circular" alt="Producto 4">
                             <p>Producto 4</p>  
                         </div>
                         <div class="text-center">
-                            <img src="imagenes/pan.jpg" class="img-circular" alt="Producto 5">
+                            <img src="imagenes/productos/taller.jpg" class="img-circular" alt="Producto 5">
                             <p>Producto 5</p>  
                         </div>
                         <div class="text-center">
@@ -100,8 +110,39 @@
 
     <!-- proceso -->
     <section id="proceso" class="p-5">
-        <h2 class="text-center">Nuestro Proceso</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat hic repudiandae optio, nobis explicabo facilis consequatur, temporibus assumenda similique veritatis ullam cupiditate omnis quo ipsa, expedita laboriosam nemo sit eius..</p>
+        <h2 class="text-center mb-4">Nuestro Proceso</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="imagenes/proceso/ingredientes.jpg" class="cartaProceso" alt="Selección de Ingredientes">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Selección de Ingredientes</h5>
+                        <p class="textoCarta">Comenzamos con la selección de los mejores ingredientes frescos y naturales. Solo usamos lo mejor para ofrecerte un producto delicioso y saludable.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="imagenes/proceso/elaboracion.jpg" class="cartaProceso" alt="Elaboración Artesanal">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Elaboración Artesanal</h5>
+                        <p class="textoCarta">Nuestro proceso de elaboración es completamente artesanal, cuidando cada detalle y cada receta, para garantizar la calidad y el sabor único de nuestros productos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="imagenes/proceso/horneado.jpg" class="cartaProceso" alt="Horneado Perfecto">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Horneado Perfecto</h5>
+                        <p class="textoCarta">Conseguimos el horneado perfecto gracias a nuestra experiencia y el cuidado en cada paso. El resultado es una textura suave y un sabor que te encantará.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <p>Todo nuestro proceso está pensado para ofrecerte productos frescos, deliciosos y llenos de amor. Desde la selección de ingredientes hasta el último toque final, cada paso es realizado con dedicación.</p>
+        </div>
     </section>
 
     <!-- separador -->
@@ -141,7 +182,7 @@
 
     <!-- footer -->
     <footer class="bg-dark text-white text-center p-4">
-        <p>Copyright © 2024 INSERTAR NOMBRE DE LA STARTUP. Todos los derechos reservados.</p>
+        <p>Copyright © 2024 Azucar y Ron Bakery. Todos los derechos reservados.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

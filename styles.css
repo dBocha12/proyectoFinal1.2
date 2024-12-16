@@ -3,11 +3,22 @@
     --color-fondo-claro: #E8D9C6; 
     --color-fondo-generico: #3E3532;
     --color-texto-principal-claro: #ffffff;
-    --color-texto-secundario-claro: #a19797; 
+    --color-texto-secundario-claro: #beb2b2; 
     --color-texto-alternativo: #d73365;
     --color-borde: #abe5d9;
 }
 
+h1, h2, h3 {
+    color: var(--color-texto-principal-claro);
+    font-family: 'Pacifico';
+    font-size: 80px;
+}
+
+p {
+    font-family: 'Quicksand', serif;
+    font-size: 20px;
+    color: var(--color-texto-secundario-claro);
+}
 
 body {
     background-color: var(--color-fondo-oscuro);
@@ -76,11 +87,34 @@ nav .navbarMarca img {
     margin: 10px;
 }
 
+.carousel-item p {
+    font-size: 16px;
+    color: var(--color-texto-principal-claro);
+    margin-top: 10px;  
+}
+
 
 /* proceso */
 #proceso {
     background-color: var(--color-fondo-oscuro);
     color: var(--color-texto-principal-claro);
+}
+
+.textoCarta{
+    color: var(--color-fondo-generico);
+}
+
+.cartaProceso{
+    margin: 5px 5px 0px 5px;
+    height: 300px;
+}
+
+.cartaProceso:hover{
+    opacity: 70%;
+}
+
+.card{
+    background-color: var(--color-fondo-claro);
 }
 
 /* contacto */
