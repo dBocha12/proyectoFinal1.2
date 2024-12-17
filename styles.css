@@ -12,12 +12,14 @@ h1, h2, h3 {
     color: var(--color-texto-principal-claro);
     font-family: 'Pacifico';
     font-size: 80px;
+    user-select: none;
 }
 
 p {
     font-family: 'Quicksand', serif;
     font-size: 20px;
     color: var(--color-texto-secundario-claro);
+    user-select: none;
 }
 
 body {
@@ -35,12 +37,12 @@ nav .nav-link{
 }
 
 nav .navbarMarca {
-    padding-right: 65%;
+    padding-right: 64.8%;
+    text-decoration: none;
 }
 
 nav .nav-link {
     font-size: 18px;
-    text-decoration: none;
     margin-right: 15px;
     color: white;
 }
@@ -78,19 +80,32 @@ nav .navbarMarca img {
     color: var(--color-texto-principal-claro);
 }
 
-.img-circular {
+.imagenCircular {
     width: 400px;         
     height: 150px;
     border-radius: 600px; 
     object-fit: cover; 
-    border: 3px solid var(--color-borde);
+    border: 3px solid var(--color-fondo-claro);
     margin: 10px;
+}
+
+.carousel-inner{
+    height: 600px;
+}
+
+.imagenCircular:hover {
+    opacity: 80%;
+    transform: scale(1.1);
+}
+
+.carousel-item {
+    margin-top: 30px;  
 }
 
 .carousel-item p {
     font-size: 16px;
     color: var(--color-texto-principal-claro);
-    margin-top: 10px;  
+    margin-top: 20px;  
 }
 
 
@@ -117,12 +132,6 @@ nav .navbarMarca img {
     background-color: var(--color-fondo-claro);
 }
 
-/* contacto */
-#contacto {
-    background-color: var(--color-fondo-oscuro);
-    color: var(--color-texto-principal-claro);
-}
-
 /* separador */
 .separador {
     height: 20px;
@@ -137,8 +146,115 @@ nav .navbarMarca img {
     object-fit: cover;
 }
 
-/* footer */
-footer {
-    background-color: #333;
+/* contacto */
+#contacto {
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-texto-principal-claro);
+}
+
+.form-control:focus {
+    background-color: var(--color-fondo-generico);
     color: white;
+}
+
+.form-control {
+    background-color: #575353; 
+}
+
+.form-control {
+    color: white;
+}
+
+button[type="submit"] {
+    background-color: #F4A460;
+    border: none;
+    color: #3E2723;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px 50px 20px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--color-fondo-claro);
+    color: black;
+}
+
+
+
+/* footer */
+
+footer p{
+    margin: 0px 0px -100px 0px;
+    font-size: 16px;
+}
+
+/* responsividad */
+@media (max-width: 768px) {
+    h1, h2, h3 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .navbar .navbarMarca img {
+        height: 40px;
+        width: 40px;
+    }
+
+    nav .navbarMarca {
+        padding-right: 0;
+    }
+
+    nav .nav-link {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    #inicio {
+        height: auto;
+    }
+
+    #productos .imagenCircular {
+        width: 100px;
+        height: 100px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .carousel-item img {
+        height: 200px;
+    }
+
+    .cartaProceso {
+        height: auto;
+    }
+
+    .card {
+        height: auto;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    footer p {
+        font-size: 12px;
+        margin: 0px 0px -10px 0px;
+    }
+
+    .separador {
+        width: 100%;
+    }
 }
