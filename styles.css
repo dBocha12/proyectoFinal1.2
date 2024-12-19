@@ -9,6 +9,10 @@
     --color-borde: #abe5d9;
 }
 
+/* estilos generales para: 
+titulos: color y su fuente, al igual que su tamano y evitamos que se pueda seleccionar y por ende copiar
+parrafos: colos y fuente de quicksand, tamano y evitamos que se pueda seleccionar y por ende copiar */
+
 h1, h2, h3 {
     color: var(--color-texto-principal-claro);
     font-family: 'Pacifico';
