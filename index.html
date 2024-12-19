@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azucar Y Ron - Bakery</title>
+    <!-- se carga los links necesarios para boostrap, tanto como CSS y JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- anadimos pagina de css, el icono del tab y las dos fuentes custom: Pacifico y QuickSand -->
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="imagenes/logoAYR.png">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -15,11 +18,13 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
+            <!-- definimos el logo a la izquierda del navbar -->
             <a class="navbarMarca" href="#"> <img src="imagenes/logoAYR.png" alt="Logo Azucar y Ron"> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- definimos los sectores de la pagina, que funcionan como botones a la derecha del navbar -->
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">Nosotros</a></li>
@@ -37,25 +42,29 @@
         <p class="textoSecundario">Pasteleria y talleres a tu servicio.</p>
     </section>
 
-    <!-- separador -->
+    <!-- anado un separador para comidad visual -->
     <div class="separador"></div>
 
-    <!-- sobre -->
+    <!-- sobre-->
     <section id="sobre" class="p-5">
         <h2 class="text-center mb-4">Sobre Mi</h2>
         <div class="row">
+            <!-- anadimos una descripcion de la persona encargada de la startup -->
             <div class="text-center">
                 <p>En Azúcar y Ron, nos especializamos en la pastelería artesanal, creando productos frescos y deliciosos para endulzar tus momentos. Cada queque, torta y postre que elaboramos está hecho con mucho amor y los mejores ingredientes, lo que nos permite ofrecerte un sabor único en cada bocado.</p>
                 <p>Sabemos que cada momento merece ser especial, por eso nos enfocamos en crear experiencias inolvidables con nuestras exquisiteces. Desde una tarde en casa hasta la celebración de un cumpleaños, nuestros productos son la opción perfecta para acompañar cualquier ocasión.</p>
             </div>
         </div>
+        
         <div class="text-center mt-5">
             <p>Con nuestras delicias artesanales, estamos seguros de que cada bocado te hará sonreír. ¡Gracias por elegirnos!</p>
             <p><strong>Andrea</strong> - Fundadora</p>
+            <!-- se agrega el video de la fundadora con controles, sin volumen por default y un poster en lo que carga el video como presentacion inicial -->
+            <video src="videos/video.mp4" controls muted poster="imagenes/logoAYR.png"></video>
         </div>
     </section>
 
-    <!-- separador -->
+    <!-- anado un separador para comidad visual -->
     <div class="separador"></div>
 
     <!-- productos -->
@@ -65,6 +74,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="d-flex justify-content-around">
+                        <!-- procedemos a declarar todos los productos, cada uno con una imagen, un alt y su nombre -->
                         <div class="text-center">
                             <img src="imagenes/productos/gatos.png" class="imagenCircular" alt="Gatos">
                             <p>Gatos</p>  
@@ -75,27 +85,24 @@
                         </div>
                         <div class="text-center">
                             <img src="imagenes/productos/tortaFria.png" class="imagenCircular" alt="Torta Fria">
-                            <p>Torta Fria</p>  
+                            <p>Tortas Frias</p>  
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex justify-content-around">
                         <div class="text-center">
-                            <img src="imagenes/productos/crocante.png" class="imagenCircular" alt="Producto 4">
-                            <p>Producto 4</p>  
+                            <img src="imagenes/productos/crocante.png" class="imagenCircular" alt="Crocante">
+                            <p>Crocante</p>  
                         </div>
                         <div class="text-center">
-                            <img src="imagenes/productos/taller.jpg" class="imagenCircular" alt="Producto 5">
-                            <p>Producto 5</p>  
-                        </div>
-                        <div class="text-center">
-                            <img src="imagenes/pan.jpg" class="imagenCircular" alt="Producto 6">
-                            <p>Producto 6</p>  
+                            <img src="imagenes/productos/taller.jpg" class="imagenCircular" alt="Talleres de panaderia">
+                            <p>Talleres de panaderia</p>  
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- se agregan los controles del carrusel -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carruselProductos" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </button>
@@ -105,7 +112,7 @@
         </div>
     </section>
 
-    <!-- separador -->
+    <!-- anado un separador para comidad visual -->
     <div class="separador"></div>
 
     <!-- proceso -->
@@ -113,6 +120,7 @@
         <h2 class="text-center mb-4">Nuestro Proceso</h2>
         <div class="row">
             <div class="col-lg-4 col-md-6 mb-4">
+                <!-- se crean 3 cartas explicando cada uno de los procesos de la startup al preparar los producots -->
                 <div class="card">
                     <img src="imagenes/proceso/ingredientes.jpg" class="cartaProceso" alt="Selección de Ingredientes">
                     <div class="card-body">
@@ -145,12 +153,13 @@
         </div>
     </section>
 
-    <!-- separador -->
+    <!-- anado un separador para comidad visual -->
     <div class="separador"></div>
 
     <!-- contacto -->
     <section id="contacto" class="p-5">
         <h2 class="text-center">Contáctanos</h2>
+        <!-- anadimos un form con lo necesario para empezar una orden con la startup -->
         <form>
             <div class="mb-3">
                 <p for="nombre" class="textoForm">Nombre</label>
@@ -176,7 +185,5 @@
     <footer class="bg-dark text-white text-center p-4">
         <p>Copyright © 2024 Azucar y Ron Bakery. Todos los derechos reservados.</p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
